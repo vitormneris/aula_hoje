@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login de usuário</title>
+    <link rel="stylesheet" href="css/estilocriarlogin.css">
+</head>
+
+<body>
+    <a id="linkVoltar" href="index.html">Voltar</a>
+    <div id="resposta">
+        <p>Bem-vindo ao sistema</p>
+    </div>
+    <section>
+        <div id="caixa">
+            <h2>Login do usuário</h2><br><br>
+            <form id="userForm">
+                <div id="crend">
+                    <summary id="cred">Crendeciais</summary>
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Digite seu e-mail..." id="email" name="email" minlength="3"
+                        maxlength="35" required><br>
+
+                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="Digite sua senha..." id="senha" name="senha" minlength="4"
+                        maxlength="35" required><br>
+                </div>                
+                <div id="botoes">
+                    <button type="button" id="submitButton">Logar usuário</button>
+                    <button type="reset">Limpar</button><br><br>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

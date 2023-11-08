@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilobuscaend.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <title>Gerenciamento de endereços</title>
+</head>
+
+<body>
+    <a id="linkVoltar" href="index.html">Voltar</a>
+    <div id="resposta">
+        <p>Bem-vindo ao sistema</p>
+    </div>
+
+    <section>
+        <div id="prin">
+            <h2>Administrar endereços</h2>
+            <div id="buscarId">
+                <h2>Buscar endereço</h2>
+                <label id="idU" for="getEndId">ID</label>
+                <input type="number" placeholder="Digite o ID do endereço..." id="getEndId" min="0" required>
+                <button id="buscarID" onclick="getEnd()">Buscar</button>
+            </div>
+            <div id="ender">
+                <h2>Endereço</h2><br>
+                <label>Cep
+                    <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value)" placeholder="Digite seu CEP..." required></label><br>
+                <label>Rua
+                    <input name="rua" type="text" id="rua" size="60" placeholder="Digite sua rua..."
+                        required></label><br>
+                <label>Bairro
+                    <input name="bairro" type="text" id="bairro" size="40" placeholder="Digite seu bairro..."
+                        required></label><br>
+                <label>Cidade
+                    <input name="cidade" type="text" id="cidade" size="40" placeholder="Digite sua cidade..."
+                        required></label><br>
+                <label>Estado
+                    <input name="uf" type="text" id="uf" size="2" placeholder="Digite seu estado..."
+                        required></label><br><br>
+                <div id="botoes">
+                    <button  onclick="updateEnd()">Atualizar</button>
+                    <button onclick="deleteEnd()">Excluir</button>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </section>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/cep.js"></script>
+    <script src="js/getEnd.js"></script>
+    <script src="js/updateEnd.js"></script>
+    <script src="js/deleteEnd.js"></script>
+</body>
+
+</html>

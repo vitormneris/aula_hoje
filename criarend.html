@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de endereço</title>
+    <link rel="stylesheet" href="css/estilocriarend.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+    <a id="linkVoltar" href="criaruser.html">Voltar</a>
+    <div id="resposta">
+        <p>Bem-vindo ao sistema</p>
+    </div>
+    <section>
+        <div id="caixa">
+            <h2>Cadastro de endereços</h2><br><br>
+            <form id="endForm">
+                <div id="ender">
+                    <summary>Adicionar endereço</summary>
+                    <label id="lbEndereco" for="idUsuario">Esolha o usuário</label>
+                    <input type="number" placeholder="ID do usuário..." id="idUsuario" min="0"
+                        required><br><br>
+
+                    <label>Cep
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                            onblur="pesquisacep(this.value)" placeholder="Digite seu CEP..." required></label><br>
+                    <label>Rua
+                        <input name="rua" type="text" id="rua" size="60" placeholder="Digite sua rua..."
+                            required></label><br>
+                    <label>Bairro
+                        <input name="bairro" type="text" id="bairro" size="40" placeholder="Digite seu bairro..."
+                            required></label><br>
+                    <label>Cidade
+                        <input name="cidade" type="text" id="cidade" size="40" placeholder="Digite sua cidade..."
+                            required></label><br>
+                    <label>Estado
+                        <input name="uf" type="text" id="uf" size="2" placeholder="Digite seu estado..."
+                            required></label><br>
+                </div>
+            </form>
+            <div id="botoes">
+                <button type="button" id="submitButton">Adicionar</button>
+                <button type="reset">Limpar</button><br><br>
+            </div>
+        </div>
+        <div id="map"></div>
+    </section>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/cep.js"></script>
+    <script src="js/createEnd.js"></script>
+</body>
+
+</html>
