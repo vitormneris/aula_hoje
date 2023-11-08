@@ -1,0 +1,186 @@
+body {
+    background: linear-gradient(90deg, rgba(94,94,94,1) 0%, rgba(226,226,226,1) 14%, rgba(255,255,255,1) 33%,
+     rgba(253,253,253,1) 78%, rgba(220,220,220,1) 89%, rgba(98,98,98,1) 100%);
+    font-family: monospace;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+div#caixa {
+    position: relative;
+    bottom: 30px;
+    width: 800px;
+    height: 450px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 5%;
+    padding-bottom: 50px;
+}
+
+div#crend {
+    position: relative;
+    margin-left: 350px;  
+    margin-bottom: 20px;
+    padding: 20px; 
+    padding-top: 50px;
+    width: 450px;
+    height: 200px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    bottom: 50px;
+}
+
+
+div#resposta {
+    position: relative;
+    bottom: 30px;
+    left: 450px;
+    height: 50px;
+    width: 600px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    text-align: center;
+}
+
+div#botoes {
+    position: relative;
+    left: 190px;
+    bottom: 50px;
+    text-align: center;
+}
+
+summary {
+    position: relative;
+    font: bold 30px monospace;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    bottom: 10px;
+}
+
+summary#cred {
+    position: relative;
+    bottom: 20px;
+}
+
+p {
+    position: relative;
+    bottom: 8px; 
+    font: bold 20px monospace;
+    color: rgb(0, 0, 0);   
+}
+
+form {
+    position: relative;
+    right: 200px;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+input {
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.7); 
+    font: bold 16px monospace;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    padding-right: 35px;
+    height: 30px;
+    width: 270px;
+}
+
+label {
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font: bolder;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 8px 12px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+button:hover {
+    color: rgb(127, 110, 255);
+    background-color: black;
+    border: 2px solid rgb(127, 110, 255);
+    transition: 0.5s;
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: 20px;
+    transform: scale(1.1, 1.1);
+}
+
+a:link#ce  {
+    position: relative;
+    bottom: 30px;
+    left: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 2px solid white;
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+
+}
+
+a:visited#ce {
+    color: white;
+}
+
+a:hover#ce {
+    color: rgb(127, 110, 255);
+    background-color: black;
+    border: 2px solid rgb(127, 110, 255);
+    transition: 0.5s;
+    transform: scale(1.1, 1.1);
+}
+
+a:link#linkVoltar {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 2px solid white;
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+
+}
+
+a:visited#linkVoltar {
+    color: white;
+}
+
+a:hover#linkVoltar {
+    color: rgb(127, 110, 255);
+    background-color: black;
+    border: 2px solid rgb(127, 110, 255);
+    transition: 0.5s;
+    transform: scale(1.1, 1.1);
+}
+

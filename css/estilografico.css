@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(90deg, rgba(98,98,98,1) 0%, rgba(255,255,255,1) 15%,
+     rgba(255,255,255,1) 90%, rgba(160,160,160,1) 95%, rgba(98,98,98,1) 100%);
+    font-family: monospace;
+    font-size: 20px;
+}
+
+section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+
+a:link#linkVoltar {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 2px solid white;
+    padding: 7px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+
+}
+
+a:visited#linkVoltar {
+    color: white;
+}
+
+a:hover#linkVoltar {
+    color: rgb(127, 110, 255);
+    background-color: black;
+    border: 2px solid rgb(127, 110, 255);
+    transition: 0.5s;
+    transform: scale(1.1, 1.1);
+}
